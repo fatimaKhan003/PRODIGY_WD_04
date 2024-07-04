@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <img src="hamburgermenu.svg" alt="Menu Icon" class="menu-icon">
+        </div>
+        <header class="header">
+            <div class="logo">
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="task4.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="projects-heading">My Projects</h1>
+            <hr class="section-divider">
+
+            <div class="project-display">
+                <button class="arrow left-arrow" onclick="previousProject()"><i class="fas fa-arrow-left"></i></button>
+
+                <div class="project-item" id="project1">
+                    <video class="project-video" id="video1" autoplay loop muted controls>
+                        <source src="AtmosAlert.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-details">
+                        <h2>AtmosAlert - Weather App</h2>
+                        <p><strong>Languages Used:</strong> HTML, CSS, JavaScript</p>
+                        <p>This weather application provides users with real-time weather information, a 5-day forecast, 
+                            and air pollution data for any city worldwide.
+                             Users can search for a city or click on a location on the map to retrieve weather details,
+                              including temperature, humidity, wind speed, and weather conditions.
+                               Additionally, the app displays air quality index (AQI) data,
+                                highlighting the air quality level with color-coded alerts to indicate the severity.</p>
+                        <a href="https://github.com/fatimaKhan003/PRODIGY_WD_05" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item" id="project2">
+                    <video class="project-video" id="video2" autoplay loop muted controls>
+                        <source src="stopwatch.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-details">
+                        <h2>Stopwatch</h2>
+                        <p><strong>Languages Used:</strong> HTML, CSS, JAVASCRIPT</p>
+                        <p>The stopwatch includes essential functions such as start, pause, reset, and lap recording, 
+                            enabling users to track multiple time segments.
+                             Additionally, it offers themes to switch between light and dark modes, enhancing usability and
+                              comfort in different environments.</p>
+                        <a href="https://github.com/fatimaKhan003/PRODIGY_WD_02 "target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item" id="project3">
+                    <video class="project-video" id="video3" autoplay loop muted controls>
+                        <source src="TicTacToe.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-details">
+                        <h2>Tic Tac Toe</h2>
+                        <p><strong>Languages Used:</strong> HTML, CSS, JAVASCRIPT</p>
+                        <p>Tic Tac Toe game is a web-based implementation of the classic two-player game. 
+                            Designed with simplicity, it offers two modes of play: Play with Friend and Play with Computer.</p>
+
+                        <p>
+
+                            Play with Friend: Two players can enter their names and take turns to compete against each other on the same device. 
+                            The game keeps track of each player's wins and draws. </p>
+                            
+                          <p> Play with Computer: A single player can enter their name and compete against a computer opponent. 
+                            The game uses an AI algorithm to provide a challenging experience, with the computer making strategic moves.</p>
+                            
+                           <p> The game features the current player's turn, a dynamic scoreboard that updates in real-time, and a winning screen. 
+                            It also allows the user to either restart the game or exit the game.</p>
+                        <a href="https://github.com/fatimaKhan003/PRODIGY_WD_03" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item" id="project4">
+                    <video class="project-video" id="video4" autoplay loop muted controls>
+                        <source src="nav.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-details">
+                        <h2>Interactive Navigation Menu</h2>
+                        <p><strong>Languages Used:</strong> HTML, CSS, JavaScript</p>
+                        <p>
+                            This project demonstrates an interactive navigation menu that changes color 
+                            or style when scrolling down or when hovering over a menu item. 
+                            The navigation menu has a fixed position and is visible on all pages.</p>
+                        <a href="https://github.com/fatimaKhan003/PRODIGY_WD_01" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+                <button class="arrow right-arrow" onclick="nextProject()"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

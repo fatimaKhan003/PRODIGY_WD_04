@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.hamburger-menu .menu-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    width: 100%;
+    
+}
+
+.header .logo a {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; 
+    flex-direction: column; 
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.nav-links.active {
+    display: flex; 
+}
+
+.nav-links li {
+    border-bottom: 1px solid #444;
+}
+
+.nav-links li:last-child {
+    border-bottom: none;
+}
+
+.nav-links li a {
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: #555;
+}
+
+.section-divider {
+    border: 0;
+    height: 2px;
+    background-color:slategrey;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+.projects-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.project-item {
+    display: none;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.project-item.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.project-video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.github-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #555;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #333;
+        width: 200px;
+        text-align: center;
+        border-radius: 5px;
+        z-index: 2;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1em
+        0;
+    }
+
+    .nav-links li a {
+        color: #fff;
+    }
+
+    .projects-heading {
+        margin-bottom: 10px;
+    }
+
+    .project-video {
+        max-width: 90%;
+    }
+
+    .project-details {
+        max-width: 90%;
+    }
+
+    .arrow {
+        font-size: 1.5em;
+    }
+}
