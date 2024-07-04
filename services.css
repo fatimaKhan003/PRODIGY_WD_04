@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.nav-links.active {
+    display: flex; 
+}
+
+.nav-links li {
+    border-bottom: 1px solid #444;
+}
+
+.nav-links li:last-child {
+    border-bottom: none;
+}
+
+.nav-links li a {
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: #555;
+}
+
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.menu-icon {
+    color: #333;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+}
+
+.section-divider {
+    border: 0;
+    height: 2px;
+    background-color:slategrey;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 300px;
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.skill-item h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.skill-item p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        top: 80px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
