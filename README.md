@@ -28,7 +28,7 @@ This portfolio showcases my skills, projects, and professional background, a pas
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/PRODIGY_WD_04.git
+    git clone https://github.com/fatimaKhan003/PRODIGY_WD_04.git
     cd PRODIGY_WD_04
     ```
 2. **Combine video parts**:
